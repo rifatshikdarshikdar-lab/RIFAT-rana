@@ -1,4 +1,4 @@
-<script> tag near the bottom of the file.
+ <script> tag near the bottom of the file.
 
 const ADMIN_ID = 6357701459; // IMPORTANT: Replace with your Admin Telegram ID
 
@@ -68,7 +68,10 @@ Html Script
 
     
 
-<script src='//libtl.com/sdk.js' data-zone='10140361' data-sdk='show_10140361'></script>
+    <!-- 1. Monetage SDK Script -->
+
+    <<script src='//libtl.com/sdk.js' data-zone='10140361' data-sdk='show_10140361'></script>
+
 
 
     <!-- 2. Telegram Web App Script -->
@@ -275,7 +278,7 @@ Html Script
 
             <div class="ad-buttons"><button class="btn" id="rewardedBtn">Watch Ad (+0.01 USDT)</button></div>
 
-            <button class="btn" id="mainWithdrawBtn" disabled>Reach $1 USDT to Withdraw</button>
+            <button class="btn" id="mainWithdrawBtn" disabled>Reach 10.00 USDT to Withdraw</button>
 
         </div>
 
@@ -341,7 +344,7 @@ Html Script
 
                 <h2>Your Referral Link</h2>
 
-                <p>Share this link with your friends. You get 0.05 USDT for each verified friend who joins!</p>
+                <p>Share this link with your friends. You get 0.5 USDT for each verified friend who joins!</p>
 
                 <p id="referralLink" title="Click to copy"></p>
 
@@ -409,21 +412,19 @@ Html Script
 
             const ADMIN_ID = 7565201231; // EDIT_THIS: Replace with your numeric Telegram User ID.
 
-            const BOT_USERNAME = 'AdsIncome2025_bot'; // EDIT_THIS: Replace with your bot's username.
+            const BOT_USERNAME = 'AdsIncome2025'; // EDIT_THIS: Replace with your bot's username.
 
-            const WEBAPP_NAME = 'AdsIncome2025_';   // EDIT_THIS: Replace with your web app's short name.
+            const WEBAPP_NAME = 'AdsIncome2025';   // EDIT_THIS: Replace with your web app's short name.
 
             
 
-            const WITHDRAW_THRESHOLD = $1
-            
-             ;      // $1 USDT
+            const WITHDRAW_THRESHOLD = 1000;      // 1000 USDT
 
-            const AD_REWARD_CENTS = 1;          // 0.01 USDT = 10 cent
+            const AD_REWARD_CENTS = 10;          // 10 USDT = 10 cent
 
             const REFERRAL_BONUS_USDT = 0.05;    // 0.05 USDT
 
-            const DAILY_AD_LIMIT = 50;
+            const DAILY_AD_LIMIT = 20;
 
 
 
@@ -667,7 +668,7 @@ Html Script
 
                 const user = tg.initDataUnsafe.user;
 
-                const message = `--- Withdrawal Request ---\n\nUser ID: ${user.id}\nName: ${user.first_name} ${user.last_name || ''}\nUsername: @${user.username || 'N/A'}\n\nAmount: ${balanceInUSDT} USDT\nWallet Address: ${walletAddress}`;
+                const message = `--- Withdrawal Request ---\n\nUser ID: ${user.id}\nName: ${user.first_name} ${user.last_name || ''}\nUsername: @${user.username || 'N/A'}\n\nAmount: ${balanceInUSDT} USDT\nWallet Address: ${phonenumber}`;
 
                 
 
